@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+    <div class="blog" data-scroll-reveal="enter top">
+    {% if not user_like %}
+        您还没有收藏的文章哦，快去收藏吧！
+    {% endif %}
+        {% for user_like in user_like %}
+              <figure>
+                    <ul>
+                        <a href="{% url 'article:detail' %}?id={{ user_like.id }}"><img src="{{ MEDIA_URL }}{{ user_like.image }}"><span>点击查看详情</span></a>
+                    </ul>
+                    <p><a href="{% url 'article:detail' %}?id={{ user_like.id }}">{{ user_like.title }}</a></p>
+                    <figcaption>{{ user_like.desc }}</figcaption>
+              </figure>
+        {% endfor %}
+    </div>
+{% endblock %}

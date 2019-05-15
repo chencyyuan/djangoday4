@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title %}
+    关于我
+{% endblock %}
+{% block mycss %}
+    <!-- css files -->
+
+    <!-- Online-fonts -->
+    <link href="//fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext,vietnamese"
+          rel="stylesheet">
+    <!-- //Online-fonts -->
+    <link href="{% static 'css/about.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+
+    <div class="banner">
+      <p data-scroll-reveal="enter top over 2s">我们不停的翻弄着回忆，却再也找不回那时的自己</p>
+      <p data-scroll-reveal="enter left over 2s after 1s">人生，是一场盛大的遇见。若你懂得，就请珍惜。</p>
+      <p data-scroll-reveal="enter bottom over 2s after 2s">无论下多久的雨，最后都会有彩虹；无论你多么悲伤，要相信幸福在前方等候.</p>
+    </div>
+    <div class="memorial_day">
+      <div class="time_axis"></div>
+      <ul>
+        <li class="n1"><a href="/">接触计算机</a>
+          <div class="dateview">2013</div>
+        </li>
+        <li class="n2"><a href="/">制作第一个html5模板</a>
+          <div class="dateview">2015-01-12</div>
+        </li>
+        <li class="n3"><a href="/">分享第一个博客模板</a>
+          <div class="dateview">2016-06-08</div>
+        </li>
+        <li class="n4"><a href="/">制作第一个博客</a>
+          <div class="dateview">2019-05-08</div>
+        </li>
+        <li class="n5"><a href="/">模板更换为时间轴</a>
+          <div class="dateview">2017-09-08</div>
+        </li>
+      </ul>
+    </div>
+    <div class="about left">
+  <h2>Just about me</h2>
+    <ul>
+     <p>
+人生就是一个得与失的过程，而我却是一个幸运者，得到的永远比失去的多。生活的压力迫使我放弃了轻松体面的工作，但是我仍然很享受那些熬得只剩下黑眼圈的日子，因为我在学习使用Photoshop、Flash、Dreamweaver、ASP、PHP、JSP...中激发了兴趣，然后越走越远....</p>
+<p>在这条路上，而我就牢牢的把握机会...</p>
+<p>此处省略5000字......</p>
+    </ul>
+    <h2>About my blog</h2>
+    <p>域  名：www.chenyyuan.com 创建于2019年04月12日 </p>
+    <p>服务器：阿里云服务器<a href="https://promotion.aliyun.com/ntms/act/ambassador/sharetouser.html?userCode=8smrzoqa&amp;productCode=vm" target="_blank" class="blog_link">购买空间</a><a href="#" target="_blank" class="blog_link">参考我的空间配置</a></p>
+    <p>程  序：Django + Python</p>
+
+
+</div>
+
+{% endblock %}
